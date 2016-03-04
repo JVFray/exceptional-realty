@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-	<!--This is a comment. I can see it in the code but it will not appear in the browser-->
-	<!--
-	The head section contains info for search engines and the browser and is not seen by site visitors.
-	-->
-
-	<meta charset="UTF-8">
-	<title>Exceptional Realty Group - Luxury Homes - About</title>
+	<head>
+    <meta charset="UTF-8">
+    <title>Exceptional Realty Group - Luxury Homes - About</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	
 
 </head>
 <body>
+	<div id="social">
+		<a href="#">Twitter</a>
+		<a href="#">Facebook</a>
+		<a href="#">Google Plus</a>
+
+	</div>
 	<header>
 		<div class="wrapper">
 			<div id="logo">
@@ -24,8 +29,8 @@
 		</div> <!-- closing the wrapper -->
 	</header>
 
-	<div id="wrapper">
-	<section id="featured-property">
+	<div class="wrapper clearfix">
+	<section id="featured-property" class="col-3 first" >
 		<figure>
 			<img src="images/intro-pic.jpg" alt="A Beautiful Living Room"
 			title = "Welcome to Exceptional Realty">
@@ -37,7 +42,7 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, a, reprehenderit! Id modi et, error inventore soluta accusamus dignissimos, tempora omnis, minima necessitatibus cumque! Provident saepe excepturi accusamus quia necessitatibus.</p>
 	</section>
 
-	<section id="promotional">
+	<section id="promotional" class="col-2 first">
 		<figure>
 		<video controls >
 			<source src="videos/real-estate.mp4" type="video/mp4">
@@ -48,15 +53,15 @@
 	</figure>
 	</section>
 
-	<section id="news">
+	<section id="news" class="col-1">
 		<h3>Company News</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, a, reprehenderit! Id modi et, error inventore soluta accusamus dignissimos, tempora omnis, minima necessitatibus cumque! Provident saepe excepturi accusamus quia necessitatibus.</p>
 	</section>
 	</div> <!-- closing the wrapper -->
 
 <section id="details">
-	<div id="wrapper">
-		<div>
+	<div class="wrapper clearfix">
+		<div class="col-1 first">
 			<h3>Contact</h3>
 			<p>
 				email: <a href="mailto:info@exceptionalrealty.com">
@@ -71,7 +76,7 @@
 			</address>
 		</div>
 
-		<div>
+		<div class="col-1">
 			<h3>Links</h3>
 			<p>
 				<a href="#" target="_blank">Home Restoration</a><br>
@@ -80,7 +85,7 @@
 			</p>
 		</div>
 
-		<div>
+		<div class="col-1">
 			<h3>Follow</h3>
 			<p>
 				<a href="#" target="_blank">Youtube</a><br>
